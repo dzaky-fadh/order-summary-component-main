@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 16px;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--pale-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 350px;
+  background-color: white;
+  text-align: center;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.hero-img img {
+  width: 100%;
+}
+
+.information {
+  padding: 25px;
+}
+
+.title {
+  margin-bottom: 15px;
+  color: var(--dark-blue);
+  font-weight: 900;
+}
+
+.description {
+  font-weight: 500;
+  color: var(--desaturated-blue);
+}
+
+.annual-plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 15px 25px;
+  background-color: var(--very-pale-blue);
+  border-radius: 15px;
+  margin: 20px 0;
+}
+
+.double-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.plan-item {
+  font-weight: 700;
+  color: var(--dark-blue);
+  margin-bottom: 5px;
+}
+
+.price-item {
+  font-weight: 500;
+  color: var(--desaturated-blue);
+}
+
+.btn-change {
+  font-weight: 700;
+  font-size: 0.9em;
+  color: var(--bright-blue);
+  transition: all 0.3s;
+}
+
+.btn-change:hover {
+  text-decoration: none;
+}
+
+.btn-card {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-color: var(--bright-blue);
+  color: var(--very-pale-blue);
+  font-weight: 900;
+  font-family: 'Red Hat Display', sans-serif;
+  box-shadow: 0 6px 30px var(--desaturated-blue);
+  margin-bottom: 25px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.btn-card:hover {
+  background-color: hsl(245, 75%, 68%);
+}
+
+.btn-cancel {
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--desaturated-blue);
+  font-size: 0.9em;
+  transition: all 0.3s;
+}
+
+.btn-cancel:hover {
+  color: var(--dark-blue);
+}
